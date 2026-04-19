@@ -16,5 +16,4 @@ requests>=2.31.0
 python-dotenv>=1.0.0
 
 # 开发与测试工具（可选，根据需要安装）
-# pytest>=8.0.0
-# black>=24.0.0
+pytest>=8.0.0
