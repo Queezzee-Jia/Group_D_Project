@@ -66,6 +66,10 @@ def test_get_stock_price_input_output_success(mock_ticker):
     assert result["current_price"] > 0
     assert datetime.strptime(result["timestamp"], "%Y-%m-%d %H:%M:%S")
 
+    assert "change" in result
+    assert "change_pct" in result
+    assert isinstance(result["change"], float)
+    assert isinstance(result["change_pct"], float)
 @patch("stock_data_acquisition.yf.Ticker")
 def test_get_stock_price_fallback_logic(mock_ticker):
     """测试价格字段 fallback（currentPrice 不存在时使用其他字段）"""
