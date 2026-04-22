@@ -5,8 +5,8 @@ import time
 import os
 
 # Uncomment the following lines if you are debugging from mainland China and need a proxy.
-os.environ['HTTP_PROXY'] = 'http://127.0.0.1:10809'
-os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:10809'
+# os.environ['HTTP_PROXY'] = 'http://127.0.0.1:10809'
+# os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:10809'
 
 
 def _format_ticker(ticker: str) -> str:
